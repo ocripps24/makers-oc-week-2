@@ -73,9 +73,9 @@ def move
   puts 'Hit or stick: '
   card_request = gets.downcase.chomp
   if card_request == 'hit' || card_request == 'stick'
-    return card_request
+    card_request
   else
-    return move
+    move
   end
 end
 
@@ -151,4 +151,4 @@ run_game
 
 # Can't seem to diagnose why you have to type 'stick' twice to
 # end the game. Current idea is that move method would have to be
-# rewritten but that it would break the rules given by the challenge.
+# rewritten but that it would break the rules given by the challenge
